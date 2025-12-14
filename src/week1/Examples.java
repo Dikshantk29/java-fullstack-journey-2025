@@ -190,8 +190,7 @@ public class Examples {
 
             if (prices[i] > buyPrice) {
                 maxProfit = Math.max(maxProfit, prices[i] - buyPrice);
-            } else {
-                // ❌ Earlier: buyPrice updated every time
+            } else {                // ❌ Earlier: buyPrice updated every time
                 // ✅ Update only when lower price found
                 buyPrice = prices[i];
             }
