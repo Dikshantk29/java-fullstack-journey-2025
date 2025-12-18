@@ -24,7 +24,10 @@ public class CollectionFrameworkBeginner {
 
         /* ═══════════════════════════════════════════════════════
            📚 1. COLLECTION HIERARCHY (THE FAMILY TREE)
+           Link : https://www.tutorialspoint.com/java/images/hierarchy-of-collection-framework.jpg
            ═══════════════════════════════════════════════════════
+           Interface - an abstract type that is used to declare a behavior that classes must implement
+
 
            Collection (Interface) - Top parent
                ├── List (Interface) → Order matters, duplicates OK
