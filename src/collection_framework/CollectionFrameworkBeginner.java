@@ -143,6 +143,8 @@ public class CollectionFrameworkBeginner {
         linkedNames.addLast("Last");     // Add at end
         linkedNames.removeFirst();       // Remove from beginning
         linkedNames.removeLast();        // Remove from end
+        linkedNames.remove();            //Removes first element
+
 
 
         /* ═══════════════════════════════════════════════════════
