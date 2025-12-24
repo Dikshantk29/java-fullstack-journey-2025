@@ -1,4 +1,4 @@
-package collection_framework;
+package Concepts;
 
 import java.util.*;
 import java.util.concurrent.ConcurrentHashMap;
