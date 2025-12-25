@@ -397,6 +397,100 @@ obj.show(); // B
 ```
 
 ---
+---
+---
+Alright bro 😎 let’s make this **super practical** with code and key points you must remember for interviews.
+
+We’ll cover **all three cases you mentioned**.
+
+---
+
+## Java Code Example: Reference vs Object Type
+
+```java
+class A {
+    int x = 10;
+
+    void show() {
+        System.out.println("A show method");
+    }
+
+    void display() {
+        System.out.println("A display method");
+    }
+}
+
+class B extends A {
+    int y = 20;
+
+    @Override
+    void show() {
+        System.out.println("B show method");
+    }
+
+    void print() {
+        System.out.println("B print method");
+    }
+}
+
+public class TestOOP {
+    public static void main(String[] args) {
+        // 1️⃣ Reference type = Object type = A
+        A obj1 = new A();
+        obj1.show();        // A show method
+        obj1.display();     // A display method
+        // obj1.print();    ❌ Compile-time error (not in A)
+
+        // 2️⃣ Reference type = A, Object type = B
+        A obj2 = new B();
+        obj2.show();        // B show method (runtime polymorphism)
+        obj2.display();     // A display method
+        // obj2.print();    ❌ Compile-time error (only in B)
+
+        // 3️⃣ Reference type = Object type = B
+        B obj3 = new B();
+        obj3.show();        // B show method
+        obj3.display();     // A display method (inherited)
+        obj3.print();       // B print method
+    }
+}
+```
+
+---
+
+## ✅ Important Points to Remember
+
+1. **Reference type decides what you can access at compile time**
+
+    * Only members of the reference class are visible.
+
+2. **Object type decides which overridden method runs at runtime**
+
+    * This is **dynamic method dispatch** (runtime polymorphism).
+
+3. **Variables are not polymorphic**
+
+   ```java
+   System.out.println(obj2.x); // 10 (from A)
+   ```
+
+4. **You can assign subclass object to superclass reference (Upcasting)**
+
+    * `A obj = new B();` ✅
+    * Useful for **loose coupling** and **polymorphism**
+
+5. **Cannot assign superclass object to subclass reference (Downcasting) without explicit cast**
+
+   ```java
+   B obj = (B) new A(); // ❌ Runtime error: ClassCastException
+   ```
+
+6. **Always remember:**
+
+    * **Reference type = Compile-time access**
+    * **Object type = Runtime behavior**
+---
+---
 
 ## Abstraction & abstract Keyword
 

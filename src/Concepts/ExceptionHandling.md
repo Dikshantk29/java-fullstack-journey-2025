@@ -261,7 +261,8 @@ public class HandlingExample {
 
 ### Ducking (throws)
 Pass the exception responsibility to the caller.
-
+ - Exception Ducking =
+ “I won’t handle this exception here… whoever calls me should handle it.”
 ```java
 public class DuckingExample {
     // Method ducks the exception
