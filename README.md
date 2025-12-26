@@ -151,7 +151,7 @@ A comprehensive, structured learning roadmap for mastering Java full-stack devel
 **1. Clone the repository**
 ```bash
 git clone https://github.com/Dikshantk29/java-fullstack-journey-2025.git
-cd java-fullstack-journey
+cd java-fullstack-journey-2025
 ```
 
 **2. Navigate to a module**
@@ -186,3 +186,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 *Happy Learning! Keep Building! 🚀*
 
 </div>
+
