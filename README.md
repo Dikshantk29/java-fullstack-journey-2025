@@ -8,10 +8,10 @@
 
 <h3>A comprehensive learning path to becoming a Java Full-Stack Developer</h3>
 
-![GitHub last commit](https://img.shields.io/github/last-commit/yourusername/java-fullstack-journey2025)
-![GitHub stars](https://img.shields.io/github/stars/yourusername/java-fullstack-journey2025)
-![GitHub forks](https://img.shields.io/github/forks/yourusername/java-fullstack-journey2025)
-![GitHub issues](https://img.shields.io/github/issues/yourusername/java-fullstack-journey2025)
+![GitHub last commit](https://img.shields.io/github/last-commit/Dikshantk29/java-fullstack-journey2025)
+![GitHub stars](https://img.shields.io/github/stars/Dikshantk29/java-fullstack-journey2025)
+![GitHub forks](https://img.shields.io/github/forks/Dikshantk29/java-fullstack-journey2025)
+![GitHub issues](https://img.shields.io/github/issues/Dikshantk29/java-fullstack-journey2025)
 </div>
 
 ## 📋 Table of Contents
@@ -134,4 +134,5 @@ Give a ⭐️ if this project helped you!
 <div align="center">
   <p>Made with ❤️ and ☕</p>
   <p>Happy Coding! 🚀</p>
+
 </div>
