@@ -1,134 +1,188 @@
-# Java Full-Stack Journey 2025 🚀
-
 <div align="center">
-  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg" alt="Java Logo" width="100" height="100"/>
-  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/spring/spring-original.svg" alt="Spring Logo" width="100" height="100"/>
-  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg" alt="React Logo" width="100" height="100"/>
-  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/postgresql/postgresql-original.svg" alt="PostgreSQL Logo" width="100" height="100"/>
 
-<h3>A comprehensive learning path to becoming a Java Full-Stack Developer</h3>
+# 🚀 Java Full-Stack Journey 2025
+
+*From Core Java to Production-Ready Applications*
+
+<p>
+  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg" alt="Java" width="80"/>
+  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/spring/spring-original.svg" alt="Spring" width="80"/>
+  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg" alt="React" width="80"/>
+  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/postgresql/postgresql-original.svg" alt="PostgreSQL" width="80"/>
+</p>
+
+<p>
+  <a href="https://github.com/Dikshantk29"><img src="https://img.shields.io/github/stars/Dikshantk29/java-fullstack-journey?style=social" alt="GitHub Stars"/></a>
+  <a href="https://www.linkedin.com/in/dikshant-koriwar-3aa1b722a/"><img src="https://img.shields.io/badge/LinkedIn-Connect-blue" alt="LinkedIn"/></a>
+  <a href="https://twitter.com/Dikshantk29"><img src="https://img.shields.io/twitter/follow/Dikshantk29?style=social" alt="Twitter"/></a>
+</p>
+
+</div>
+
 ---
 
-## 📋 Table of Contents
+## 📖 Overview
 
-- [About](#about)
-- [Learning Path](#learning-path)
-- [Tech Stack](#tech-stack)
-- [Resources](#resources)
-- [License](#license)
+A comprehensive, structured learning roadmap for mastering Java full-stack development. This repository chronicles my journey from fundamental concepts to building scalable, enterprise-grade applications with modern tools and best practices.
 
-## 🎯 About
+> **Goal**: Become a proficient full-stack developer capable of architecting, developing, and deploying production-ready web applications.
 
-Welcome to the Java Full-Stack Journey 2025! This repository documents my comprehensive journey from Java fundamentals
-to becoming a proficient full-stack developer. Each module contains hands-on projects, code examples, and detailed notes
-to help solidify understanding of modern web development practices.
+---
 
-## 🗺️ Learning Path
+## 🎯 Learning Roadmap
 
-### Phase 1: Java Fundamentals (Weeks 1-4)
+<table>
+<tr>
+<td width="50%">
 
-- Core Java concepts and OOP principles
-- Collections Framework and Generics
-- Exception Handling and File I/O
-- Multithreading and Concurrency
-- Java 8+ Features (Streams, Lambda, Optional)
+### 🔷 Phase 1: Java Fundamentals
+**Duration**: 4 Weeks
 
-### Phase 2: Backend Development (Weeks 5-10)
+- ✅ Object-Oriented Programming
+- ✅ Collections & Generics
+- ✅ Exception Handling & I/O
+- ✅ Multithreading & Concurrency
+- ✅ Modern Java Features (8-17+)
 
-- Spring Framework Core
-- Spring Boot and REST APIs
-- Spring Data JPA & Hibernate
-- Spring Security & JWT Authentication
-- Microservices Architecture
+</td>
+<td width="50%">
 
-### Phase 3: Database Management (Weeks 11-12)
+### 🔷 Phase 2: Backend Development
+**Duration**: 6 Weeks
 
-- SQL and Relational Databases
-- PostgreSQL/MySQL
-- Database Design and Normalization
-- Query Optimization
+- 🔄 Spring Framework Core
+- 🔄 Spring Boot & REST APIs
+- 🔄 Spring Data JPA & Hibernate
+- 🔄 Spring Security & JWT
+- 🔄 Microservices Architecture
 
-### Phase 4: Frontend Development (Weeks 13-18)
+</td>
+</tr>
+<tr>
+<td width="50%">
 
-- HTML5, CSS3, JavaScript ES6+
-- React.js Fundamentals
-- State Management (Redux/Context API)
-- React Hooks and Modern Patterns
-- TypeScript Basics
+### 🔷 Phase 3: Database Management
+**Duration**: 2 Weeks
 
-### Phase 5: Integration & Deployment (Weeks 19-24)
+- ⏳ SQL & Relational Databases
+- ⏳ PostgreSQL/MySQL
+- ⏳ Database Design & Normalization
+- ⏳ Query Optimization
 
-- RESTful API Integration
-- Docker & Containerization
-- CI/CD with GitHub Actions
-- Cloud Deployment (AWS/Azure)
-- Testing (JUnit, Mockito, Jest)
+</td>
+<td width="50%">
 
-## 💻 Tech Stack
+### 🔷 Phase 4: Frontend Development
+**Duration**: 6 Weeks
 
-### Backend
+- ⏳ HTML5, CSS3, JavaScript ES6+
+- ⏳ React.js & Component Architecture
+- ⏳ State Management (Redux/Context)
+- ⏳ React Hooks & Patterns
+- ⏳ TypeScript Fundamentals
 
-<div>
-  <img src="https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white" alt="Java"/>
-  <img src="https://img.shields.io/badge/Spring_Boot-6DB33F?style=for-the-badge&logo=spring-boot&logoColor=white" alt="Spring Boot"/>
-  <img src="https://img.shields.io/badge/Hibernate-59666C?style=for-the-badge&logo=hibernate&logoColor=white" alt="Hibernate"/>
-  <img src="https://img.shields.io/badge/Maven-C71A36?style=for-the-badge&logo=apache-maven&logoColor=white" alt="Maven"/>
-</div>
+</td>
+</tr>
+<tr>
+<td colspan="2">
 
-### Frontend
+### 🔷 Phase 5: Integration & Deployment
+**Duration**: 6 Weeks
 
-<div>
-  <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" alt="React"/>
-  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript"/>
-  <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="HTML5"/>
-  <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="CSS3"/>
-</div>
+- ⏳ RESTful API Integration
+- ⏳ Docker & Containerization
+- ⏳ CI/CD Pipelines (GitHub Actions)
+- ⏳ Cloud Deployment (AWS/Azure)
+- ⏳ Testing (JUnit, Mockito, Jest)
 
-### Database
+</td>
+</tr>
+</table>
 
-<div>
-  <img src="https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white" alt="PostgreSQL"/>
-  <img src="https://img.shields.io/badge/MySQL-005C84?style=for-the-badge&logo=mysql&logoColor=white" alt="MySQL"/>
-  <img src="https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white" alt="MongoDB"/>
-</div>
+---
 
-### Tools & DevOps
+## 💼 Tech Stack
 
-<div>
-  <img src="https://img.shields.io/badge/Docker-2CA5E0?style=for-the-badge&logo=docker&logoColor=white" alt="Docker"/>
-  <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" alt="Git"/>
-  <img src="https://img.shields.io/badge/GitHub_Actions-2088FF?style=for-the-badge&logo=github-actions&logoColor=white" alt="GitHub Actions"/>
-  <img src="https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=postman&logoColor=white" alt="Postman"/>
-</div>
+**Backend**
 
-## 📚 Resources
+![Java](https://img.shields.io/badge/Java_17+-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)
+![Spring Boot](https://img.shields.io/badge/Spring_Boot-6DB33F?style=for-the-badge&logo=spring-boot&logoColor=white)
+![Hibernate](https://img.shields.io/badge/Hibernate-59666C?style=for-the-badge&logo=hibernate&logoColor=white)
+![Maven](https://img.shields.io/badge/Maven-C71A36?style=for-the-badge&logo=apache-maven&logoColor=white)
 
-- **Documentation**: [Spring Boot Docs](https://spring.io/projects/spring-boot) | [React Docs](https://react.dev)
-- **Tutorials**: Baeldung, Spring Academy, React Tutorial
-- **Books**: "Spring in Action", "Effective Java", "You Don't Know JS"
-- **YouTube Channels**: Telusko, Amigoscode, Traversy Media
+**Frontend**
 
-## 📝 License
+![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+
+**Database**
+
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white)
+![MySQL](https://img.shields.io/badge/MySQL-005C84?style=for-the-badge&logo=mysql&logoColor=white)
+![MongoDB](https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white)
+
+**DevOps & Tools**
+
+![Docker](https://img.shields.io/badge/Docker-2CA5E0?style=for-the-badge&logo=docker&logoColor=white)
+![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
+![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=for-the-badge&logo=github-actions&logoColor=white)
+![Postman](https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=postman&logoColor=white)
+![AWS](https://img.shields.io/badge/AWS-232F3E?style=for-the-badge&logo=amazon-aws&logoColor=white)
+
+---
+
+## 🎓 Learning Resources
+
+| Category | Resources |
+|----------|-----------|
+| **Official Docs** | [Spring Boot](https://spring.io/projects/spring-boot) • [React](https://react.dev) • [Java](https://docs.oracle.com/en/java/) |
+| **Books** | *Spring in Action* • *Effective Java* • *You Don't Know JS* |
+| **Online Courses** | Spring Academy • React Tutorial • Baeldung |
+| **YouTube** | Telusko • Amigoscode • Traversy Media • Programming with Mosh |
+| **Practice** | LeetCode • HackerRank • Spring Guides |
+
+---
+
+## 🚀 Getting Started
+
+**1. Clone the repository**
+```bash
+git clone https://github.com/Dikshantk29/java-fullstack-journey-2025.git
+cd java-fullstack-journey
+```
+
+**2. Navigate to a module**
+```bash
+cd 01-java-fundamentals
+```
+
+**3. Follow along with the README in each module**
+
+---
+
+## 🤝 Connect With Me
+
+[![GitHub](https://img.shields.io/badge/GitHub-Dikshantk29-181717?style=for-the-badge&logo=github)](https://github.com/Dikshantk29)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Dikshant_Koriwar-0077B5?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/dikshant-koriwar-3aa1b722a/)
+[![Twitter](https://img.shields.io/badge/Twitter-@Dikshantk29-1DA1F2?style=for-the-badge&logo=twitter)](https://twitter.com/Dikshantk29)
+
+---
+
+## 📜 License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## 👨‍💻 Author
-
-**Your Name**
-
-- GitHub: [@Dikshantk29](https://github.com/Dikshantk29)
-- LinkedIn: [Dikshant Koriwar](https://www.linkedin.com/in/dikshant-koriwar-3aa1b722a/)
-- Twitter: [@Dikshantk29](https://twitter.com/Dikshantk29)
-
-## ⭐ Show your support
-
-Give a ⭐️ if this project helped you!
-
 ---
 
 <div align="center">
-  <p>Made with ❤️ and ☕</p>
-  <p>Happy Coding! 🚀</p>
+
+### ⭐ Star this repo if you find it helpful!
+
+**Made with ❤️ and ☕ by Dikshant Koriwar**
+
+*Happy Learning! Keep Building! 🚀*
 
 </div>
-
