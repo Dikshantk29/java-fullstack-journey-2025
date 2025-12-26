@@ -7,6 +7,7 @@
   <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/postgresql/postgresql-original.svg" alt="PostgreSQL Logo" width="100" height="100"/>
 
 <h3>A comprehensive learning path to becoming a Java Full-Stack Developer</h3>
+---
 
 ## 📋 Table of Contents
 
