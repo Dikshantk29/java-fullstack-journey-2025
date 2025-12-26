@@ -17,6 +17,61 @@
   <a href="https://twitter.com/Dikshantk29"><img src="https://img.shields.io/twitter/follow/Dikshantk29?style=social" alt="Twitter"/></a>
 </p>
 
+- Spring Framework Core
+- Spring Boot and REST APIs
+- Spring Data JPA & Hibernate
+- Spring Security & JWT Authentication
+- Microservices Architecture
+
+### Phase 3: Database Management (Weeks 11-12)
+
+- SQL and Relational Databases
+- PostgreSQL/MySQL
+- Database Design and Normalization
+- Query Optimization
+
+### Phase 4: Frontend Development (Weeks 13-18)
+
+- HTML5, CSS3, JavaScript ES6+
+- React.js Fundamentals
+- State Management (Redux/Context API)
+- React Hooks and Modern Patterns
+- TypeScript Basics
+
+### Phase 5: Integration & Deployment (Weeks 19-24)
+
+- RESTful API Integration
+- Docker & Containerization
+- CI/CD with GitHub Actions
+- Cloud Deployment (AWS/Azure)
+- Testing (JUnit, Mockito, Jest)
+
+## 💻 Tech Stack
+
+### Backend
+
+<div>
+  <img src="https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white" alt="Java"/>
+  <img src="https://img.shields.io/badge/Spring_Boot-6DB33F?style=for-the-badge&logo=spring-boot&logoColor=white" alt="Spring Boot"/>
+  <img src="https://img.shields.io/badge/Hibernate-59666C?style=for-the-badge&logo=hibernate&logoColor=white" alt="Hibernate"/>
+  <img src="https://img.shields.io/badge/Maven-C71A36?style=for-the-badge&logo=apache-maven&logoColor=white" alt="Maven"/>
+</div>
+
+### Frontend
+
+<div>
+  <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" alt="React"/>
+  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript"/>
+  <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="HTML5"/>
+  <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="CSS3"/>
+</div>
+
+### Database
+
+<div>
+  <img src="https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white" alt="PostgreSQL"/>
+  <img src="https://img.shields.io/badge/MySQL-005C84?style=for-the-badge&logo=mysql&logoColor=white" alt="MySQL"/>
+  <img src="https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white" alt="MongoDB"/>
 </div>
 
 ---
@@ -174,6 +229,18 @@ cd 01-java-fundamentals
 ## 📜 License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## 👨‍💻 Author
+
+**Your Name**
+
+- GitHub: [@Dikshantk29](https://github.com/Dikshantk29)
+- LinkedIn: [Dikshant Koriwar](https://www.linkedin.com/in/dikshant-koriwar-3aa1b722a/)
+- Twitter: [@Dikshantk29](https://twitter.com/Dikshantk29)
+
+## ⭐ Show your support
+
+Give a ⭐️ if this project helped you!
 
 ---
 
