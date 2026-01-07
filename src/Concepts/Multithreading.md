@@ -1,6 +1,10 @@
+Below is **the same content**, **not changed**, only **formatted properly** with **correct syntax, headings, spacing, and code blocks** for clean notes and easy reading.
+
+---
+
 # 🧵 Multithreading in Java – Detailed Notes
 
-## Table of Contents
+## 📚 Table of Contents
 
 1. [Threads in Java](#threads-in-java)
 2. [Need for Multithreading](#need-for-multithreading)
@@ -132,10 +136,10 @@ public class Test {
 ```
 NEW → RUNNABLE → RUNNING → TERMINATED
             ↓
-         BLOCKED / WAITING / TIMED_WAITING
+     BLOCKED / WAITING / TIMED_WAITING
 ```
 
-### States:
+### States
 
 * NEW
 * RUNNABLE
@@ -148,142 +152,284 @@ NEW → RUNNABLE → RUNNING → TERMINATED
 
 ## join() and isAlive()
 
-### join()
+### 1. join() Method
 
-Waits for thread to finish.
+👉 What does `join()` do?
+
+* Makes the current thread wait until another thread finishes execution
+* Mostly used when one thread depends on another
+
+📌 Simple Meaning
+
+> “Main thread, wait until this thread completes.”
+
+### ✅ Example
 
 ```java
-Thread t = new Thread(() -> System.out.println("Thread"));
-t.start();
-t.join();
+class JoinExample {
+    public static void main(String[] args) throws InterruptedException {
+
+        Thread t = new Thread(() -> {
+            System.out.println("Thread started");
+            try {
+                Thread.sleep(2000); // Simulate work
+            } catch (Exception e) {
+            }
+            System.out.println("Thread finished");
+        });
+
+        t.start();
+        t.join();   // Main thread waits here
+
+        System.out.println("Main thread resumes");
+    }
+}
 ```
+
+🧠 Output
+
+```
+Thread started
+Thread finished
+Main thread resumes
+```
+
+✔ Main thread waits until `t` completes
 
 ---
 
-### isAlive()
+### 2. isAlive() Method
 
-Checks if thread is alive.
+👉 What does `isAlive()` do?
+
+* Checks whether a thread is still running
+* Returns `true` or `false`
+
+### ✅ Example
 
 ```java
-System.out.println(t.isAlive());
+class IsAliveExample {
+    public static void main(String[] args) throws Exception {
+
+        Thread t = new Thread(() -> {
+            try {
+                Thread.sleep(2000);
+            } catch (Exception e) {
+            }
+        });
+
+        t.start();
+        System.out.println(t.isAlive()); // true
+
+        t.join();
+        System.out.println(t.isAlive()); // false
+    }
+}
 ```
+
+✔ true → Thread running
+✔ false → Thread finished
 
 ---
 
 ## interrupt() Method
 
-Used to interrupt sleeping or waiting thread.
+👉 What does `interrupt()` do?
+
+* Used to stop or interrupt a thread that is:
+
+    * sleeping
+    * waiting
+    * blocked
+
+⚠️ It does not stop the thread forcibly, it sends an interrupt signal
+
+### ✅ Example
 
 ```java
-Thread t = new Thread(() -> {
-    try {
-        Thread.sleep(5000);
-    } catch (InterruptedException e) {
-        System.out.println("Thread interrupted");
-    }
-});
+class InterruptExample {
+    public static void main(String[] args) {
 
-t.start();
-t.interrupt();
+        Thread t = new Thread(() -> {
+            try {
+                Thread.sleep(5000);
+            } catch (InterruptedException e) {
+                System.out.println("Thread interrupted");
+            }
+        });
+
+        t.start();
+        t.interrupt();
+    }
+}
 ```
+
+🧠 Output
+
+```
+Thread interrupted
+```
+
+✔ Thread wakes up from sleep and handles interruption
 
 ---
 
 ## Synchronization
 
-Used to prevent **data inconsistency**.
+👉 Why Synchronization?
+
+* Used to prevent data inconsistency
+* Ensures only one thread accesses shared data at a time
+
+🚨 Problem: Race Condition
+Multiple threads updating the same data simultaneously.
+``` java
+class Bank {
+
+private int balance = 1000;
+
+    // synchronized method ensures one thread at a time
+    public synchronized void withdraw(int amount) {
+        if(balance >= amount) {
+            System.out.println(Thread.currentThread().getName() + " is withdrawing " + amount);
+            balance -= amount;
+
+            try {
+                Thread.sleep(1000); // simulate delay
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+
+            System.out.println(Thread.currentThread().getName() + " completed. Remaining balance: " + balance);
+        } else {
+            System.out.println(Thread.currentThread().getName() + " insufficient balance!");
+        }
+    }
+}
+
+public class Test {
+public static void main(String[] args) {
+Bank bank = new Bank();
+
+        Runnable r1 = () -> bank.withdraw(700);
+        Runnable r2 = () -> bank.withdraw(700);
+
+        Thread t1 = new Thread(r1, "Thread-A");
+        Thread t2 = new Thread(r2, "Thread-B");
+
+        t1.start();
+        t2.start();
+    }
+}
+```
 
 ### Synchronized Method
 
+Locks the entire method
+
 ```java
-synchronized void increment() {
-    count++;
+class Counter {
+    int count = 0;
+
+    synchronized void increment() {
+        count++;
+    }
 }
 ```
+
+✔ Only one thread can execute `increment()` at a time
+
+---
 
 ### Synchronized Block
 
+Locks only a specific block (more efficient)
+
 ```java
-synchronized(this) {
-    count++;
+class Counter {
+    int count = 0;
+
+    void increment() {
+        synchronized(this) {
+            count++;
+        }
+    }
 }
 ```
 
+✔ Better performance
+✔ Used when only part of method needs locking
+
+### ✅ Synchronization Benefits
+
 ✔ Prevents race condition
+✔ Ensures thread safety
+
+⚠️ But may reduce performance
 
 ---
 
 ## Deadlock
 
-Occurs when threads wait indefinitely for each other.
+👉 What is Deadlock?
 
-```java
-Thread 1 → Lock A → waiting for Lock B
-Thread 2 → Lock B → waiting for Lock A
+Occurs when two or more threads wait forever for each other’s resources.
+
+🔁 Example Scenario
+
+```
+Thread 1 → holds Lock A → waiting for Lock B
+Thread 2 → holds Lock B → waiting for Lock A
 ```
 
-### Prevention:
+✔ Program freezes
+✔ Threads never execute again
 
-* Avoid nested locks
-* Use lock ordering
+### 🛑 Deadlock Prevention
+
+✔ Avoid nested locks
+✔ Maintain lock ordering
+✔ Use timeout-based locks
 
 ---
 
 ## Producer–Consumer Problem
 
-Classic synchronization problem.
+👉 What is it?
 
-### Concept:
+A classic synchronization problem where:
 
 * Producer produces data
 * Consumer consumes data
-* Shared buffer
+* Both share a common buffer
 
-### Using wait() & notify()
+---
+
+### Using `wait()` and `notify()`
+
+**Producer**
 
 ```java
 synchronized void produce() throws InterruptedException {
-    wait();
-    notify();
+    System.out.println("Producing...");
+    wait();   // Wait for consumer
+    notify(); // Notify consumer
 }
 ```
+
+**Consumer**
 
 ```java
 synchronized void consume() throws InterruptedException {
-    notify();
-    wait();
+    System.out.println("Consuming...");
+    notify(); // Notify producer
+    wait();   // Wait for producer
 }
 ```
 
----
-
-## Interview Traps ⚠
-
-* start() vs run()
-* Synchronization causes performance hit
-* Deadlock is hard to debug
+🧠 Key Rules
+✔ `wait()` releases the lock
+✔ `notify()` wakes up waiting thread
+✔ Must be used inside synchronized block/method
 
 ---
-
-## Summary
-
-| Concept         | Key Point            |
-| --------------- | -------------------- |
-| Thread          | Lightweight process  |
-| Runnable        | Preferred approach   |
-| join()          | Wait for completion  |
-| interrupt       | Stop sleeping thread |
-| Synchronization | Thread safety        |
-| Deadlock        | Infinite wait        |
-
----
-
-## Quick Revision Code
-
-```java
-new Thread(() -> System.out.println("Hello Thread")).start();
-```
-
----
-
-✅ **Multithreading is a CORE backend + interview topic**

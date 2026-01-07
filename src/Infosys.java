@@ -1,3 +1,5 @@
+import java.util.*;
+
 class Infosys {
     public static void main(String[] args) {
 
@@ -94,7 +96,6 @@ class Infosys {
     }
 
     //5.Longest Palindromic Substring📍📍📍
-
     public static String LPS(String str) {
         if (str == null || str.length() <= 1) {
             return str;
