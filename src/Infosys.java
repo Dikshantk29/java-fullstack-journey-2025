@@ -136,4 +136,8 @@ class Infosys {
     }
 
 
+    //6.Allocate minimum nuber of space
+
+
+
 }
