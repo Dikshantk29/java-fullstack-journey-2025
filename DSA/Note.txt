@@ -1,0 +1,97 @@
+1.Two Sum (#1)
+
+class Solution {
+    public int[] twoSum(int[] nums, int target) {
+
+        HashMap<Integer, Integer> seen = new HashMap<>();
+        for(int i =0;i<nums.length;i++){
+            int num = nums[i];
+            int diff = target - num;
+
+            if(seen.containsKey(diff)){
+                return new int[]{diff, i};
+            }
+            seen.put(i,num);
+        }
+
+
+        return new int[]{-1.-1};
+        
+
+      
+
+    }
+}
+
+2.Best Time to Buy and Sell Stock (#121)
+
+class Solution {
+    public int maxProfit(int[] prices) {
+        int l=0,r=1;
+        int maxP=0;
+
+        while(r < prices.length){
+            if(prices[l] < prices[r]){
+                int profit = prices[r]- prices[l];
+                maxP = Math.max(maxP, profit);
+            }else{
+                l=r;
+            }
+            r++;
+
+        }
+        return maxP;
+    }
+}
+
+3.Contains Duplicate (#217)
+
+class Solution {
+    public boolean containsDuplicate(int[] nums) {
+        Set<Integer> seen = new HashSet<>();
+
+        for (int i = 0; i < nums.length; i++) {
+            if (seen.contains(nums[i])) {
+                return true;
+            }
+            seen.add(nums[i]);
+
+        }
+
+        return false;
+    }
+}
+
+
+4.Maximum Subarray (Kadane's Algorithm) (#53)
+class Solution {
+    public int maxSubArray(int[] nums) {
+
+        int currSum = nums[0];
+        int maxSum = nums[0];
+
+        for(int i=1;i<nums.length;i++){
+            currSum = Math.max(nums[i],  nums[i] + currSum);
+            maxSum = Math.max(currSum, maxSum);
+        }
+
+        return maxSum;
+
+    }
+}
+
+5.Move Zeroes (#283)
+class Solution {
+    public void moveZeroes(int[] nums) {
+        int l = 0;
+        for (int r = 0; r < nums.length; r++) {
+            if (nums[r] != 0) {
+                int temp = nums[l];
+                nums[l] = nums[r];
+                nums[r] = temp;
+                l++;
+            }
+        }
+
+    }
+}
